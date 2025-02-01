@@ -1,0 +1,219 @@
+*{margin: 0;}
+
+body,html{
+    height: 100%;
+    width: 100%;
+    background: #0f0f0f;
+    overflow: hidden;
+}
+
+.engine{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition-duration: 2s;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+.compressed{
+  position: absolute;
+  z-index: 100000;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.compressed i{
+  position: absolute;
+  z-index: 2;
+  top: 10vh;
+  right: 10vh;
+  font-size: 5vh;
+  z-index: 2;
+}
+.compressed-background{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #8F8F8F;
+  opacity: 0.5;
+  z-index: 1;
+}
+.compressed-conteudo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background: snow;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 2.5vh;
+  align-items: center;
+  align-content: center;
+  border-radius: 1vh;
+}
+.compressed-conteudo p {
+  color: #8F8F8F;
+  opacity: 0.8;
+  text-align: left;
+}
+.compressed-conteudo a{
+  position: relative;
+  margin-top: 1.5vh;
+  text-decoration: none;
+  padding: 1vh;
+  color: snow;
+  border-radius: 0.5vh;
+  background: #0f0f0f;
+}
+.tools{
+    position: relative;
+    height: auto;
+    width: 62.5vw;
+    background: snow;
+}
+
+.tools form{
+    position: absolute;
+    bottom: -10vh;
+    left: 6vw;
+    display: flex;
+    background: aliceblue, 0.4;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.07);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.07);
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.07);
+    height: 40vh;
+    width: 50vw;
+    border-radius: 1vh;
+    border: lightgray 0.1vh solid;
+    flex-direction: column;
+}
+#fileInput{
+  position: absolute;
+  height: 40vh;
+  width: 50vw;
+  color: transparent;
+  border: none;
+}
+.tools-conteudo{
+    position: absolute;
+    bottom: 5vh;
+    left: 24.6vw;
+    font-size: 3vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+}
+.tools-conteudo img{
+    height: 15vh;
+    width: 15vh;
+    margin-bottom: 2vh;
+}
+.tools-conteudo h1{
+    position: relative;
+    font-size: 1.5vh;
+    color: #B91919;
+    text-align: center;
+}
+.image-query-list{
+    position: relative;
+    height: auto;
+    width: 37.5vw;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.image-query-item{
+    position: relative;
+    margin: 5vh;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #8F8F8F;
+    border-radius: 0 0 0.5vh 0.5vh;
+}
+.image-query-item img{
+    position: relative;
+    height: 6vw;
+    width: 6.5vw;
+}
+.image-query-item-display p{
+    color: snow;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 10vh;
+    padding: 0.5vw;
+}
+
+input[type=file]::file-selector-button{
+    visibility: hidden;
+    color: transparent;
+  }
+  
+input[type=file]::-webkit-file-upload-button{
+    visibility: hidden;
+    color: transparent;
+}
+.loading-files{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.loading-files p{
+  margin-top: 8vh;
+  font-size: 2vh;
+  color: #0f0f0f;
+}
+#circle{
+  z-index: 1000;
+  position: relative;
+  transform: scale(2.5)
+}
+
+.tools-config{
+  position: absolute;
+  top: 20vh;
+  left: 30;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+}
+
+.tools-config button{
+  position: relative;
+  outline: none;
+  border: none;
+  width: 20vw;
+  height: auto;
+  background: lightgreen;
+  color: #0f0f0f;
+  font-size: 3vh;
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Maturador</title>
+    <!-- Hover Css -->
+    <link rel="stylesheet" href="./lib/hover.css">
+
+    <!-- Fontes -->
+    <link rel="stylesheet" href="https://use.typekit.net/nhv0iop.css">
+    <link rel="stylesheet" href="fontes.css">
+
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="engine" class="engine">
+        <div id="imageQueryList" class="image-query-list">
+        </div>
+        <div id="tools" class="tools">
+            <div id="toolsUpload" class="tools-upload">
+                <div class="loading-files">
+                    <circle-progress id='circle' value="0"  max="1" min="0"></circle-progress>
+                    <p class="gibson-regular">Carregando Arquivos...</p>
+                    <button id="loadingFiles">Continuar</button>
+                </div>
+                <div class="tools-conteudo">
+                    <img src="./icons/upload.png">
+                    <h1 class="gibson-regular">Clique na tela ou arraste seus arquivos.</h1>
+                </div>
+                <form id="uploadForm" class="hvr-float" enctype="multipart/form-data">
+                    <input class="hvr-float" type="file" id="fileInput" name="files[]" multiple accept="image/*" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);"/>
+                </form>
+            </div>
+            <div id="toolsConfig" class="tools-config">
+                <h1 id="range-display" class="gibson-light">Comprimir: 100%</h1>
+                <input id="quality-range" type="range" id="vol" value="100" name="vol" min="20" max="100">
+                <button type="button" class='gibson-regular' id="uploadButton">Compress Files</button>
+            </div>
+        </div>
+        <div id="compressed" class="compressed">
+            <div id="app-reset-click" class="compressed-background"></div>
+            <i id="app-reset-close" class="fa-solid fa-xmark"></i>
+            <div class="compressed-conteudo">
+                <p>compressed.zip</p>
+                <a href="./zip/compress.zip" class="gibson-regular" download="" target="_blank">Download link</a>
+            </div>
+        </div>
+    </div>
+    <!-- Progress -->
+    <script src="https://cdn.jsdelivr.net/npm/js-circle-progress/dist/circle-progress.min.js" type="module"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
