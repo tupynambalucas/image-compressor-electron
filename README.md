@@ -1,5 +1,8 @@
 # Image Compressor
 
+Made with:
+[Electron](https://www.electronjs.org)
+
 ### This image compressor was made for compressing 3D models textures, making them lighter for Web use purposes.
 
 >[!NOTE]
