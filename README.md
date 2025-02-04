@@ -3,6 +3,13 @@
 Made with:
 [Electron](https://www.electronjs.org)
 
+> [!WARNING]
+> You probably gonna have problems with the follow engines depending winch system you are:<br/>
+> pngquant<br/>
+> mozjpeg<br/>
+> <br/>
+> In that case be sure to install them globaly in your environment.
+
 ### This image compressor was made for compressing 3D models textures, making them lighter for Web use purposes.
 
 >[!NOTE]
