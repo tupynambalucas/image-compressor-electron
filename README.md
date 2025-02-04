@@ -140,4 +140,4 @@ ipcMain.handle("convert-images", async (event, quality) => {
 })
 ```
 
-And thats it, the images are compressed by the percentage that you chose
+## And thats it, the images are compressed by the percentage that you chose.
