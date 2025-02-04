@@ -9,7 +9,7 @@ Made with:
 > pngquant<br/>
 > mozjpeg<br/>
 > <br/>
-> In that case be sure to install them globaly in your environment.
+> In that case be sure to install them globaly in your machine.
 
 ### This image compressor was made for compressing 3D models textures, making them lighter for Web use purposes.
 
