@@ -90,7 +90,7 @@ async function convertFiles(event) {
 }
 ```
 
-And then in the ipcMain it will compress and write the files in (./compress/) folder:
+And then in the ipcMain it will compress and gerenare a ***.zip*** file containing all images compressed:
 ```
 ipcMain.handle("convert-images", async (event, quality) => {
   const processImages = async (onProgress) => {
@@ -148,4 +148,4 @@ ipcMain.handle("convert-images", async (event, quality) => {
 })
 ```
 
-## And thats it, the images are compressed by the percentage that you chose.
+# And thats it, the images are compressed and stored in a ***.zip*** file.
