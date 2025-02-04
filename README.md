@@ -4,7 +4,8 @@ Made with:
 [Electron](https://www.electronjs.org)
 
 > [!WARNING]
-> You probably gonna have problems with the follow engines depending winch system you are:<br/>
+> You probably gonna have problems with the follow engines depending in winch system you are:<br/>
+> <br/>
 > pngquant<br/>
 > mozjpeg<br/>
 > <br/>
