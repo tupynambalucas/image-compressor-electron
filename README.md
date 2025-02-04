@@ -56,7 +56,7 @@ async function base64(dataUrl, file) {
 }
 ```
 
-then it is sended to ipcMain with ***ipcRenderer.invoke("get-images", image)***, at this point ipcMain will run the follow code using fs:
+Then it is sended to ipcMain with ***ipcRenderer.invoke("get-images", image)***, at this point ipcMain will run the follow code using fs:
 ```
 fs.writeFileSync(`./img/${image.name}`, Buffer.from(image.dataurl.split(',')[1], 'base64'));
 ```
