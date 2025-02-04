@@ -16,5 +16,6 @@
     "gifsicle": "^5.2.1",
     "nodemon": "^2.0.15",
     "pngquant-bin": "^6.0.1"
+    "mozjpeg": "^7.0.0"  
   }
 }
