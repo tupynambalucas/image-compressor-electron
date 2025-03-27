@@ -11,7 +11,7 @@ Made with:
 > mozjpeg<br/>
 > <br/>
 > In that case be sure to install them globaly in your machine.
-<br/>
+
 > [!NOTE]
 > This project is just a first version, but it do work.<br/>
 > Feel free to Clone this repository and make your own changes.
