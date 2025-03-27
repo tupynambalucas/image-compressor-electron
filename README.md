@@ -20,6 +20,10 @@ In your CLI, in the project root run:
 ```
 npm install
 ```
+Followed by:
+```
+npm start
+```
 
 ## How it work?
 In the renderer process(web page/ipcRenderer) the images that you upload (drag and dropping or selecting with upload button) are converted to base64(because electron ipcMain can't handle files)
